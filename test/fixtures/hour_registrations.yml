@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  start_time: 2018-10-25 23:33:50
+  end_time: 2018-10-25 23:33:50
+  small_break: 1
+  big_break: 1
+  working_hours: 1.5
+
+two:
+  start_time: 2018-10-25 23:33:50
+  end_time: 2018-10-25 23:33:50
+  small_break: 1
+  big_break: 1
+  working_hours: 1.5

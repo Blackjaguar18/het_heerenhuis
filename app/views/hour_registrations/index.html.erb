@@ -1,0 +1,27 @@
+<div class="main-div">
+  <%= button_to "New", { :action => "new" }, { :method => :get, :class => "button" } %>
+  <section class="section">
+    <table class="table is-striped">
+      <thead>
+        <tr>
+          <td> Starttijd </td>
+          <td> Eindtijd </td>
+          <td> Pauze </td>
+          <td> Kleine pauze </td>
+          <td> Totaal gewerkte uren </td>
+        </tr>
+      </thead>
+      <tbody>
+        <% @hour_registrations.each do |registration| %>
+          <tr>
+            <td> <%= registration.start_time %> </td>
+            <td> <%= registration.end_time %> </td>
+            <td> <%= registration.small_break %> </td>
+            <td> <%= registration.big_break %> </td>
+            <td> <%= registration.working_hours %> </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </section>
+</div>
